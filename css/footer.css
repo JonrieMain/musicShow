@@ -1,0 +1,82 @@
+.mainCon .footer{
+	height: 100%;
+	width: 100%;
+	min-height: 600px;
+	max-width: 1800px;
+		background: url(../img/footerBg.jpg)no-repeat center center/cover;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	position: relative;
+
+}
+.mainCon .footer >img{
+	padding-top: 150px;
+
+}
+.mainCon .footer >h1{
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.mainCon .footer >h1 a{
+	text-decoration: none;
+
+}
+.mainCon .footer ul{
+	margin-top: 45px;
+	display: flex;
+	flex-direction: column;
+}
+.mainCon .footer ul h2{
+	font-size: 24px;
+	font-weight: 800;
+	margin-bottom: .9rem;
+}
+.mainCon .footer ul a{
+	color: #000;
+	text-decoration: none;
+	margin-bottom: 1rem;
+	font-size: 24px;
+}
+.mainCon .footer select{
+	background: no-repeat;
+	border: 3px solid #9913e1;
+	color: #9913e1;
+	width: 250px;
+	height: 45px;
+	text-align: center;
+	border-radius: 3rem;
+	outline: none;
+	cursor: pointer;
+	font-size: 17px;
+	margin-top: 45px;
+}
+
+
+
+
+/* media */
+@media all and (max-width: 800px){
+	.mainCon .footer{
+
+	/* new */
+	flex-direction: column;
+	align-items: center;
+		min-height: 1900px;
+	}
+
+
+	.mainCon .footer >h1{
+		/* new */
+	top: 7%;
+}
+
+	.mainCon .footer ul{
+		padding: 0;
+	}
+
+}

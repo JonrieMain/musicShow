@@ -1,0 +1,41 @@
+.mainCon .johnDoe{
+	height: 100%;
+	width: 100%;
+	min-height: 800px;
+		max-width: 1800px;
+	margin: 0 auto;
+		background: url(../img/johnDoeBg.jpg)no-repeat center center/cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: .4rem;
+
+}
+.mainCon .johnDoe h1{
+	font-size: 96px;
+	color: #000;
+	font-family: var(--sta);
+	padding-top: 3rem;
+}
+.mainCon .johnDoe h1 >span{
+	color: #9913e1;
+}
+.mainCon .johnDoe p{
+	font-size: 18px;
+	font-family: var(--monda);
+	max-width: 500px;
+}
+
+
+@media all and (max-width: 900px){
+			.mainCon .johnDoe{
+				min-height: 700px;
+			}
+		.mainCon .johnDoe h1{
+		font-size: 50px;
+	}
+			.mainCon .johnDoe p{
+				font-weight: 800;
+			}
+}

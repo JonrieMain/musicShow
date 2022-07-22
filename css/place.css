@@ -1,0 +1,153 @@
+.mainCon .place{
+	height: 100%;
+	width: 100%;
+	min-height: 800px;
+	max-width: 1800px;
+	margin: 0 auto;
+	background: url(../img/placeBg.jpg)no-repeat center center/cover;
+	position: relative;
+	overflow: hidden;
+	padding: 0 .4rem;
+}
+
+.mainCon .place >span{
+	position: absolute;
+	    top: 30%;
+    left: 76%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	gap: 1.5rem;
+}
+.mainCon .place >span h1{
+	color: #831adc;
+	font-size: 33px;
+	font-weight: 700;
+	font-family: var(--monda);
+}
+
+.mainCon .place p:nth-child(2){
+	position: absolute;
+	top: 49%;
+    left: 34%;
+	transform: translate(-50%,-50%)rotate(-4deg);
+	font-size: 18px;
+	font-family: var(--monda);
+	font-weight: 800;
+	text-transform: uppercase;
+	background: #000;
+	color: #fff;
+	padding: .3rem .8rem;
+	text-align: center;
+}
+.mainCon .place p:nth-child(3){
+	position: absolute;
+	top: 57%;
+    left: 57%;
+	transform: translate(-50%,-50%)rotate(4deg);
+	font-size: 18px;
+	font-family: var(--monda);
+	font-weight: 800;
+	text-transform: uppercase;
+	background: #831adb;
+	color: #fff;
+	padding: .3rem .8rem;
+	text-align: center;
+}
+.mainCon .place p:nth-child(4){
+	position: absolute;
+	     top: 72%;
+    left: 34.5%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	font-family: var(--monda);
+	color: #000;
+	max-width: 435px;
+	font-weight: 600;
+	word-break: word-break;
+}
+.mainCon .place p:nth-child(4) span,.mainCon .place p:nth-child(5) span{
+	color: #831adb;
+}
+
+.mainCon .place p:nth-child(5){
+	position: absolute;
+	 top: 72%;
+    left: 63%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	font-family: var(--monda);
+	color: #000;
+	max-width: 435px;
+	font-weight: 600;
+	word-break: word-break;
+}
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+@media all and (max-width: 1550px){
+		.mainCon .place p:nth-child(5){
+		position: absolute;
+	    left: 68%;
+	}
+}
+@media all and (max-width: 1315px){
+		.mainCon .place p:nth-child(4){
+	    left: 27.5%;
+	}
+}
+
+@media all and (max-width: 885px){
+
+
+	.mainCon .place{
+	min-height: 1000px;
+}
+
+
+
+	.mainCon .place >span {
+    top: 9%;
+    left: 50%;
+
+}
+
+.mainCon .place p:nth-child(2) {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    width: 100%;
+    }
+
+.mainCon .place p:nth-child(3) {
+    top: 46%;
+    left: 50%;
+    width: 100%;
+}
+
+		.mainCon .place p:nth-child(4) {
+    top: 65%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+		.mainCon .place p:nth-child(5) {
+    top: 88%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+}

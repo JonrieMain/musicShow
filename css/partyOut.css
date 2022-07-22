@@ -1,0 +1,152 @@
+.mainCon .partyOut{
+	height: 100%;
+	width: 100%;
+	min-height: 870px;
+	max-width: 1800px;
+    margin: 0 auto;
+	background: url(../img/partyOut.jpg)no-repeat left center/cover;
+	position: relative;
+    padding: 0 .4rem;
+}
+.mainCon .partyOut p:nth-child(1){
+	position: absolute;
+    top: 32.5%;
+    left: 28%;
+    transform: translate(-50%,-50%)rotate(-4deg);
+    font-size: 18px;
+    font-family: var(--monda);
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    padding: .3rem .8rem;
+    text-align: center;
+}
+.mainCon .partyOut p:nth-child(2){
+position: absolute;
+    top: 41%;
+    left: 30%;
+    transform: translate(-50%,-50%)rotate(2deg);
+    font-size: 18px;
+    font-family: var(--monda);
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #831adb;
+    color: #fff;
+    padding: .3rem .8rem;
+    text-align: center;
+}
+.mainCon .partyOut p:nth-child(3){
+	    position: absolute;
+    top: 52%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    max-width: 460px;
+    font-size: 18px;
+    font-family: var(--monda);
+    line-height: 22px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.mainCon .partyOut a{
+	  position: absolute;
+       top: 65%;
+    left: 20%;
+	border: 3px solid #831adc;
+    padding: .6rem 40px;
+    text-decoration: none;
+    color: #831adc;
+    font-family: var(--modan);
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 3rem;
+    transition: .3s
+}
+
+.mainCon .partyOut a:hover{
+    background: #000;
+}
+.mainCon .partyOut p:nth-child(3) span{
+	color: #831adc;
+}
+
+
+
+
+
+/* media */
+@media all and (max-width: 1200px){
+
+.mainCon .partyOut p:nth-child(1) {
+    position: absolute;
+    left: 29%;
+}
+
+.mainCon .partyOut p:nth-child(2) {
+    position: absolute;
+    top: 41%;
+    left: 30%;
+}
+.mainCon .partyOut p:nth-child(3){
+    left: 29%;
+}
+.mainCon .partyOut a{
+        left: 23%;
+}
+}
+
+
+
+@media all and (max-width: 1080px){
+    .mainCon .partyOut p:nth-child(1) {
+
+    left: 50%;
+}
+
+.mainCon .partyOut p:nth-child(2) {
+    left: 50%;
+}
+.mainCon .partyOut p:nth-child(3){
+
+    left: 50%;
+}
+.mainCon .partyOut a{
+     left: 50%;
+    
+     transform: translate(0%,0%);
+}
+}
+
+
+@media all and (max-width: 800px){
+     .mainCon .partyOut{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+     }
+       .mainCon .partyOut p:nth-child(1) {
+
+   position: unset;
+    transform: translate(0%,0%);
+    transform: rotate(-4deg);
+}
+
+.mainCon .partyOut p:nth-child(2) {
+   position: unset;
+    transform: translate(0%,0%);
+    transform: rotate(2deg);
+}
+.mainCon .partyOut p:nth-child(3){
+
+   position: unset;
+    transform: translate(0%,0%);
+}
+.mainCon .partyOut a{
+    position: unset;
+     transform: translate(0%,0%);
+}
+}

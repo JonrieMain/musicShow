@@ -1,0 +1,75 @@
+.mainCon .partyYour{
+	height: 100%;
+	width: 100%;
+	min-height: 900px;
+	max-width: 1800px;
+	margin: 0 auto;
+	background: url(../img/partyYourBg.jpg)no-repeat center center/cover;
+	position: relative;
+}
+.mainCon .partyYour >span{
+	position: absolute;
+	    top: 49%;
+    left: 74%;
+	transform: translate(-50%,-50%);
+	min-width: 430px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mainCon .partyYour >span h1{
+	max-width: 410px;
+	font-size: 96px;
+	font-family: var(--sta);
+	color: #000;
+	letter-spacing: 2px;
+}
+.mainCon .partyYour >span h1 >span{
+	color: #fff;
+}
+.mainCon .partyYour >span p{
+		font-size: 18px;
+	font-family: var(--monda);
+	color: #000;
+	margin: 70px 0 40px 0;
+	word-break: break-word;
+}
+.mainCon .partyYour >span p >span{
+	color: #fff;
+	font-weight: 800;
+}
+.mainCon .partyYour >span a{
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 11px 49px;
+	border-radius: 3rem;
+	transition: .3s;
+	align-self: flex-start;
+}
+.mainCon .partyYour >span a:hover{
+	background: #000;
+}
+
+
+
+/* media */
+@media all and (max-width: 900px){
+	.mainCon .partyYour{
+		min-height: 600px;
+	}
+			.mainCon .partyYour >span{
+		  position: unset;
+		  transform: translate(0,0);
+		  padding: .4rem;
+		  min-width: 100%;
+	}
+	.mainCon .partyYour >span h1{
+		font-size: 50px;
+	}
+	.mainCon .partyYour >span a{
+		align-self: center;
+	}
+}

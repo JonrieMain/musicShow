@@ -1,0 +1,103 @@
+.mainCon .newsLetter{
+	height: 100%;
+	width: 100%;
+	min-height: 800px;
+	max-width: 1800px;
+		background: url(../img/newsLetterBg.jpg)no-repeat center center/cover;
+	margin: 0 auto;
+
+	/* layout */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+::placeholder{
+	color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+.mainCon .newsLetter form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 125px;
+}
+.mainCon .newsLetter form h1{
+	color: #000;
+	font-size: 96px;
+	font-family: var(--sta);
+	margin-bottom: 1.5rem;
+}
+.mainCon .newsLetter form input[type=text]{
+	width: 445px;
+	height: 46px;
+	border-radius: 3rem;
+	border: 2px solid #fff;
+	background: none;
+	color: #fff;
+	text-indent: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 17px;
+}
+.mainCon .newsLetter form h1 span{
+	color: #e0e0e0;
+}
+.mainCon .newsLetter form textarea{
+	border-radius: 1rem;
+		border: 2px solid #fff;
+	background: none;
+	color: #fff;
+	text-indent: 2rem;
+	padding-top: .5rem;
+	font-size: 17px;
+	margin-bottom: 1.5rem;
+}
+.mainCon .newsLetter form a{
+	background: #dfdfdf;
+	color: #9913e1;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	padding: .7rem 0;
+	border-radius: 3rem;
+	text-decoration: none;
+	transition: .3s;
+}
+.mainCon .newsLetter form a:hover{
+	background: #000;
+}
+
+
+
+
+/* media */
+@media all and (max-width: 900px){
+			.mainCon .newsLetter{
+
+		/* new layout */
+		justify-content: center;
+		padding: 0 .5rem;
+	}
+
+
+
+		.mainCon .newsLetter form{
+		margin-left: 0px;
+	}
+
+			.mainCon .newsLetter form h1{
+				font-size: 50px;
+			}
+
+			.mainCon .newsLetter form input[type=text],textarea{
+				width: 100%;
+			}
+}
