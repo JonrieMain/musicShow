@@ -51,10 +51,32 @@
 }
 
 .mainCon .home header{
-	height: 6rem;
 	width: 100%;
 	height: 235px;
+	transition: .6s linear;
+	height: 3rem;
 }
+
+
+/* trigger scrollY */
+.mainCon .home header.sticky{
+	position: fixed;
+	background: #fff;
+	z-index: 10000000000;
+	height: 6rem;
+}
+.mainCon .home header.sticky .nav{
+	top: 50%;
+}
+.mainCon .home header.sticky a img{
+      top: 50%;
+}
+
+
+
+
+
+
 /* hamburger inv */
 .mainCon .home header a img{
      cursor: pointer;
@@ -83,13 +105,13 @@ position: absolute;
 .mainCon .home header .nav a:hover{
 	color: #831adc;
 }
-.mainCon .home header .nav .active{
+.mainCon .home header .nav .ac.active{
 	color: #831adc;
 }
 
 .mainCon .home header .navSmallWidth{
 	position: absolute;
-	top: 0%;
+	top: 0;
 	left: 80%;
 	cursor: pointer;
 	height: 40px;
